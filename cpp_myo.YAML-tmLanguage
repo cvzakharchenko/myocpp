@@ -1,0 +1,22 @@
+fileTypes:
+- c++
+- cpp
+name: CPP MYO
+scopeName: source.base_scope
+uuid: 6227de31-1e75-4b87-b3f4-733b2b8adc47
+
+
+
+patterns:
+- include: '#main'
+
+
+repository:
+  main:
+    patterns:
+    - include: '#macro'
+
+  macro:
+    patterns:
+    - name: 'keyword'
+      match: '(^|\G)#[a-zA-Z]+'
